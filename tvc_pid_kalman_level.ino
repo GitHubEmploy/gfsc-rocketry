@@ -11,7 +11,7 @@ const int servoXPin = 6;
 const int servoYPin = 7;
 
 const int minX = 20;  // Minimum X position
-const int maxX = 110; // Maximum X position
+const int maxX = 120; // Maximum X position
 const int minY = 50;  // Minimum Y position
 const int maxY = 140; // Maximum Y position
 
