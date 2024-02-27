@@ -10,4 +10,5 @@ uses the following library's:
 #include <Adafruit_HMC5883_U.h> // Link TBD
 #include <Adafruit_BMP3XX.h> // Link TBD
 #include <TinyGPS++.h> // Link TBD
+#include <SBUS.h> // https://github.com/bolderflight/sbus
 ```
