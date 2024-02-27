@@ -4,7 +4,7 @@
 #include <Adafruit_BMP3XX.h>
 #include <TinyGPS++.h>
 #include <ESP32Servo.h>
-#include "Arduino_Constrained_MPC.h>
+#include <Arduino_Constrained_MPC.h>
 
 Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
 
