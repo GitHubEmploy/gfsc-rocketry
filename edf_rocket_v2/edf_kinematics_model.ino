@@ -150,10 +150,20 @@ int calculateDynamicThrustSetting(float altitudeError, float currentAcceleration
 }
 
 void controlEDF(int speed) {
-  int servoPosition = map(speed, -100, 100, 0, 180);
+  int reverseMaxBound = 0;
+  int stopBound = 90;
+  int forwardMaxBound = 180;
+
+  int servoPosition;
+  if (speed <= 0) {
+    servoPosition = map(speed, -100, 0, reverseMaxBound, stopBound);
+  } else {
+    servoPosition = map(speed, 0, 100, stopBound, forwardMaxBound);
+  }
   servoPosition = constrain(servoPosition, 0, 180);
   esc.write(servoPosition);
 }
+
 
 void deployParachute() {
   Serial.println("Deploying parachute!");
