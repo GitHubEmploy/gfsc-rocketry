@@ -3,7 +3,7 @@
 #include <Adafruit_HMC5883_U.h>
 #include <Adafruit_BMP3XX.h>
 #include <TinyGPS++.h>
-#include <Servo.h> 
+#include <ESP32Servo.h>
 
 Adafruit_HMC5883_Unified mag = Adafruit_HMC5883_Unified(12345);
 
